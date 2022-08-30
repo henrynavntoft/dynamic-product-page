@@ -15,8 +15,8 @@ h1 {
   font-size: 2em;
 }
 
-.productImg {
-  max-width: 400px;
+.listImg {
+  max-width: 200px;
 }
 
 .goBack {
@@ -30,7 +30,7 @@ h1 {
   margin: 1em;
 }
 
-.item {
+.listProduct {
   display: flex;
   flex-direction: column;
   border: 2px solid black;
