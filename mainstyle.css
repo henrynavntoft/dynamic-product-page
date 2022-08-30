@@ -16,7 +16,7 @@ h1 {
 }
 
 .productImg {
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .goBack {
@@ -30,12 +30,17 @@ h1 {
   margin: 1em;
 }
 
-.listProduct {
+.listProduct,
+.brandName {
   display: flex;
   flex-direction: column;
   border: 2px solid black;
   text-align: center;
   padding-bottom: 2%;
+}
+
+.brandName {
+  font-size: 1.5em;
 }
 
 .listImg {
@@ -56,11 +61,6 @@ ol {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
   margin: 2em;
-}
-
-.brand {
-  display: flex;
-  justify-content: center;
 }
 
 .product {

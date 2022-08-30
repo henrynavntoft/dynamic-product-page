@@ -6,27 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mainstyle.css">
-    <title>Category Page</title>
+    <title>Brands</title>
 </head>
 
 <body>
     <header>
-        <h1>Category Page</h1>
-        <h2 class="goBack"> <a href="index.html"> Go Back</a></h2>
+        <h1>Brands</h1>
+        <h2 class="goBack"> <button onclick="history.back()">Go Back</button></h2>
     </header>
     <main class="brandList">
-        <div class="brand">
-            <h2>A</h2>
-            <ol>
-                <li> <a href="product-list.html">Brand Name</a></li>
-                <li> <a href="product-list.html">Brand Name</a></li>
-                <li> <a href="product-list.html">Brand Name</a></li>
-        </div>
-        <script src="brands.js"></script>
-    </main>
-    <footer>
+        <template>
+            <a class="brandName" href="product-list.html">
+                Go to:
+                <h2 class="brand"></h2>
+            </a>
+        </template>
 
-    </footer>
+    </main>
+    <script src="brands.js"></script>
 </body>
 
 </html>
