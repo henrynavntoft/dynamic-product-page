@@ -1,4 +1,8 @@
-const url = "https://kea-alt-del.dk/t7/api/products?limit=200&brandname=Puma";
+const urlParams = new URLSearchParams(window.location.search);
+const brandname = urlParams.get("brandname");
+console.log(brandname);
+
+const url = `https://kea-alt-del.dk/t7/api/products?brandname=${brandname}`;
 
 fetch(url)
   .then((res) => res.json())

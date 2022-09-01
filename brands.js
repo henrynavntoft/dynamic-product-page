@@ -15,6 +15,9 @@ function showBrand(brand) {
   const temp = document.querySelector("template").content;
   const clone = temp.cloneNode(true);
   // Change stuff
+  clone.querySelector(
+    "a.linkToBrand"
+  ).href = `product-list.html?brandname=${brand.brandname}`;
   clone.querySelector("h2.brand").textContent = brand.brandname;
   //Selection where i want the clone
   const parent = document.querySelector("main");
