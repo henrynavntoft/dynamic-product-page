@@ -19,6 +19,7 @@ function showBrand(brand) {
     "a.linkToBrand"
   ).href = `product-list.html?brandname=${brand.brandname}`;
   clone.querySelector("h2.brand").textContent = brand.brandname;
+  clone.querySelector("p.brandBio").textContent = brand.brandbio;
   //Selection where i want the clone
   const parent = document.querySelector("main");
   //Appending it

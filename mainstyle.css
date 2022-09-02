@@ -4,6 +4,15 @@
     "Lucida Sans", Arial, sans-serif;
   text-decoration: none;
   --color: black;
+  --bg-color: white;
+  background-color: var(--bg-color);
+}
+
+a {
+  color: var(--color);
+}
+a:hover {
+  color: blanchedalmond;
 }
 
 h1 {
