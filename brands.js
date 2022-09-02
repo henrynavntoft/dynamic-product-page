@@ -11,9 +11,6 @@ function handleBrandList(data) {
 }
 
 function showBrand(brand) {
-  const firstLetter = brand.brandname.charAt(0).toLowerCase();
-  console.log(firstLetter);
-
   //Selecting template and cloning
   const temp = document.querySelector("template").content;
   const clone = temp.cloneNode(true);
@@ -21,7 +18,6 @@ function showBrand(brand) {
   clone.querySelector(
     "a.linkToBrand"
   ).href = `product-list.html?brandname=${brand.brandname}`;
-
   clone.querySelector("h2.brand").textContent = brand.brandname;
   clone.querySelector("p.brandBio").textContent = brand.brandbio;
   //Selection where i want the clone
